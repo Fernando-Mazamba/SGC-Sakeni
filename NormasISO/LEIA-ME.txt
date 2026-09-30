@@ -1,0 +1,19 @@
+PASTA NORMASISO — INSTRUÇÕES
+
+Os botões "Acesso à norma ISO 9001:2015" (na página inicial e no Guia de Uso do Manual)
+apontam para o ficheiro:
+
+    NormasISO/ISO-9001.pdf
+
+Este ficheiro NÃO está incluído no sistema, porque o texto integral da norma ISO 9001:2015
+é um documento protegido por direitos de autor da ISO/ABNT — a sua reprodução e distribuição
+não são permitidas sem uma licença/autorização adquirida junto da ISO, da ABNT ou de outro
+organismo nacional de normalização.
+
+Quando a Sakeni ou a Continental Consulting adquirir legalmente uma cópia da norma, basta:
+
+    1. Guardar o PDF adquirido exatamente com o nome "ISO-9001.pdf"
+    2. Colocá-lo dentro desta pasta (NormasISO/)
+
+Os dois botões do sistema passarão a abrir esse ficheiro automaticamente — não é necessário
+alterar mais nenhum código HTML.
