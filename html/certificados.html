@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Certificado do Sistema de Gestão da Qualidade | Sakeni</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+tailwind.config = { theme: { extend: { colors: {
+  primary:{50:'#eff6ff',100:'#dbeafe',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a'},
+  iso9001:'#2563eb' } } } }
+</script>
+<style>
+ .gradient-bg{background:linear-gradient(135deg,#1e3a8a 0%,#3b82f6 100%);}
+ .cert-card{transition:transform .2s ease, box-shadow .2s ease;}
+ .cert-card:hover{transform:translateY(-4px);box-shadow:0 20px 25px -5px rgba(0,0,0,.1);}
+ .pill{font-size:.75rem;font-weight:600;padding:.25rem .75rem;border-radius:9999px;}
+ table.data th{background:#eff6ff;color:#1e3a8a;text-align:left;}
+ table.data th,table.data td{border:1px solid #e2e8f0;padding:8px 10px;font-size:.9rem;}
+ .tab-btn{position:relative;transition:color .2s;}
+ .tab-btn::after{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:3px;background:linear-gradient(90deg,#2563eb,#1e3a8a);transform:scaleX(0);transition:transform .25s ease;}
+ .tab-btn.active{color:#1d4ed8;background:#fff;}
+ .tab-btn.active::after{transform:scaleX(1);}
+ .cert-img{transition:transform .4s ease;cursor:zoom-in;}
+ .cert-thumb:hover .cert-img{transform:scale(1.02);}
+ #lightbox{display:none;}
+ #lightbox.open{display:flex;}
+</style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+<nav aria-label="Breadcrumb" class="flex items-center text-sm text-gray-500 mb-6">
+<a class="hover:text-primary-600 transition-colors" href="../index.html"><i class="fas fa-home mr-1"></i>Início</a>
+<span class="mx-3 text-gray-300">/</span>
+<span class="text-gray-700 font-medium">Certificado</span>
+</nav>
+<div class="gradient-bg rounded-2xl p-8 mb-8 text-white shadow-lg">
+<div class="flex items-center gap-4 mb-2">
+<i class="fas fa-certificate text-4xl text-yellow-300"></i>
+<h1 class="text-3xl font-bold">Certificado do Sistema de Gestão da Qualidade</h1>
+</div>
+<p class="text-blue-100 max-w-3xl ml-12">
+    SAKENI - Prestação de Serviços, Lda · Certificada na norma ISO 9001:2015 pela SIS Certifications Pvt. Ltd.
+  </p>
+</div>
+<div class="bg-emerald-50 border border-emerald-200 rounded-xl p-5 mb-8 flex items-start gap-3">
+<i class="fas fa-circle-check text-emerald-600 text-xl mt-0.5"></i>
+<div>
+<p class="font-semibold text-emerald-800">Estado: Certificação ativa</p>
+<p class="text-sm text-emerald-700 mt-1">
+      O Sistema de Gestão da Qualidade da Sakeni foi certificado em <strong>30 de setembro de 2026</strong> na norma
+      ISO 9001:2015. O certificado é válido até <strong>29 de setembro de 2029</strong>, sujeito à conclusão com
+      sucesso da auditoria de supervisão. A primeira auditoria de supervisão está marcada para
+      <strong>30 de agosto de 2027</strong>.
+    </p>
+</div>
+</div>
+
+<!-- ISO 9001 -->
+<div class="grid md:grid-cols-1 gap-6 mb-8">
+<div class="cert-card bg-blue-50/70 rounded-xl p-6 border border-blue-100/60 flex flex-col max-w-xl">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm p-1">
+<img alt="ISO 9001" class="w-full h-full object-contain" src="../Logotipo/9001.png"/>
+</div>
+<div>
+<h3 class="text-lg font-bold text-gray-800 leading-tight">ISO 9001:2015</h3>
+<p class="text-xs text-gray-500">Sistema de Gestão da Qualidade</p>
+</div>
+</div>
+<span class="pill bg-emerald-100 text-emerald-800 w-fit mb-4"><i class="fas fa-check mr-1"></i>Certificado</span>
+<table class="data w-full mb-4">
+<tr><th style="width:45%">N.º do Certificado</th><td class="font-semibold">SIS1170926Q116</td></tr>
+<tr><th>Registo inicial</th><td>30.09.2026</td></tr>
+<tr><th>Última emissão</th><td>30.09.2026</td></tr>
+<tr><th>Próxima supervisão</th><td>30.08.2027</td></tr>
+<tr><th>Recertificação até</th><td>30.08.2029</td></tr>
+<tr><th>Data de expiração</th><td>29.09.2029</td></tr>
+</table>
+<a class="inline-flex items-center text-blue-700 hover:text-blue-900 text-sm font-medium" href="../Certificados/Certificado-ISO9001-SIS1170926Q116-PT.pdf" rel="noopener" target="_blank">
+<i class="fas fa-file-pdf mr-2"></i> Abrir certificado (PT)
+    </a>
+</div>
+</div>
+
+<!-- Visualização dos certificados -->
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 mb-8">
+<div class="border-b border-gray-200 bg-gradient-to-r from-gray-50 to-primary-50/40 flex flex-wrap">
+<button class="tab-btn active flex-1 min-w-[160px] py-4 px-4 text-center font-semibold text-gray-600 hover:text-primary-700 flex items-center justify-center" data-tab="pt" id="tab-pt" onclick="changeTab('pt')" type="button"><i class="fas fa-flag mr-2 text-primary-600"></i>Português</button>
+<button class="tab-btn flex-1 min-w-[160px] py-4 px-4 text-center font-semibold text-gray-600 hover:text-primary-700 flex items-center justify-center" data-tab="en" id="tab-en" onclick="changeTab('en')" type="button"><i class="fas fa-globe mr-2 text-primary-600"></i>English</button>
+<button class="tab-btn flex-1 min-w-[160px] py-4 px-4 text-center font-semibold text-gray-600 hover:text-primary-700 flex items-center justify-center" data-tab="rec" id="tab-rec" onclick="changeTab('rec')" type="button"><i class="fas fa-award mr-2 text-primary-600"></i>Reconhecimento</button>
+<button class="tab-btn flex-1 min-w-[160px] py-4 px-4 text-center font-semibold text-gray-600 hover:text-primary-700 flex items-center justify-center" data-tab="impl" id="tab-impl" onclick="changeTab('impl')" type="button"><i class="fas fa-file-signature mr-2 text-primary-600"></i>Implementação</button>
+</div>
+<div class="tab-panel p-6 md:p-8" id="panel-pt">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+<div><h3 class="text-xl font-bold text-gray-900 mb-1">Certificado em Português</h3><p class="text-gray-600">Vista prévia do documento oficial traduzido</p></div>
+<a class="mt-4 md:mt-0 inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl" href="../Certificados/Certificado-ISO9001-SIS1170926Q116-PT.pdf" rel="noopener" target="_blank"><i class="fas fa-file-pdf mr-3 text-lg"></i>Descarregar PDF</a>
+</div>
+<div class="max-w-md mx-auto">
+<figure class="cert-thumb bg-white rounded-xl p-4 shadow-lg border border-gray-200">
+<div class="flex items-center justify-between mb-3">
+<figcaption class="font-semibold text-gray-800 text-sm"><i class="fas fa-certificate mr-2 text-iso9001"></i>ISO 9001:2015</figcaption>
+<a class="text-xs text-gray-500 hover:text-primary-700" href="../Certificados/imagens/Certificado-ISO9001-SIS1170926Q116-PT.png" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square mr-1"></i>Abrir imagem</a>
+</div>
+<button type="button" class="block w-full overflow-hidden rounded-lg bg-gray-50 border border-gray-100" onclick="openLightbox('../Certificados/imagens/Certificado-ISO9001-SIS1170926Q116-PT.png','Certificado ISO 9001:2015 em português')">
+<img alt="Certificado ISO 9001:2015 em português" class="cert-img w-full h-auto rounded-lg" loading="lazy" src="../Certificados/imagens/Certificado-ISO9001-SIS1170926Q116-PT.png"/>
+</button>
+</figure>
+</div>
+<p class="flex items-center justify-center text-gray-500 text-sm mt-6"><i class="fas fa-expand-alt mr-2"></i>Clique na imagem para ampliar</p>
+</div>
+<div class="tab-panel hidden p-6 md:p-8" id="panel-en">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+<div><h3 class="text-xl font-bold text-gray-900 mb-1">Certificate in English</h3><p class="text-gray-600">Original version issued by SIS Certifications</p></div>
+<a class="mt-4 md:mt-0 inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl" href="../Certificados/Certificado-ISO9001-SIS1170926Q116-EN.pdf" rel="noopener" target="_blank"><i class="fas fa-file-pdf mr-3 text-lg"></i>Descarregar PDF</a>
+</div>
+<div class="max-w-md mx-auto">
+<figure class="cert-thumb bg-white rounded-xl p-4 shadow-lg border border-gray-200">
+<div class="flex items-center justify-between mb-3">
+<figcaption class="font-semibold text-gray-800 text-sm"><i class="fas fa-certificate mr-2 text-iso9001"></i>ISO 9001:2015</figcaption>
+<a class="text-xs text-gray-500 hover:text-primary-700" href="../Certificados/imagens/Certificado-ISO9001-SIS1170926Q116-EN.png" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square mr-1"></i>Abrir imagem</a>
+</div>
+<button type="button" class="block w-full overflow-hidden rounded-lg bg-gray-50 border border-gray-100" onclick="openLightbox('../Certificados/imagens/Certificado-ISO9001-SIS1170926Q116-EN.png','ISO 9001:2015 certificate in English')">
+<img alt="ISO 9001:2015 certificate in English" class="cert-img w-full h-auto rounded-lg" loading="lazy" src="../Certificados/imagens/Certificado-ISO9001-SIS1170926Q116-EN.png"/>
+</button>
+</figure>
+</div>
+<p class="flex items-center justify-center text-gray-500 text-sm mt-6"><i class="fas fa-expand-alt mr-2"></i>Clique na imagem para ampliar</p>
+</div>
+<div class="tab-panel hidden p-6 md:p-8" id="panel-rec">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+<div><h3 class="text-xl font-bold text-gray-900 mb-1">Certificate of Recognition</h3><p class="text-gray-600">Emitido pela SIS Certifications em 30 de setembro de 2026</p></div>
+<a class="mt-4 md:mt-0 inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl" href="../Certificados/Certificado-Reconhecimento-SIS.pdf" rel="noopener" target="_blank"><i class="fas fa-file-pdf mr-3 text-lg"></i>Descarregar PDF</a>
+</div>
+<div class="max-w-md mx-auto">
+<figure class="cert-thumb bg-white rounded-xl p-4 shadow-lg border border-gray-200">
+<div class="flex items-center justify-between mb-3">
+<figcaption class="font-semibold text-gray-800 text-sm"><i class="fas fa-award mr-2 text-amber-500"></i>ISO 9001:2015</figcaption>
+<a class="text-xs text-gray-500 hover:text-primary-700" href="../Certificados/imagens/Certificado-Reconhecimento-SIS.png" target="_blank" rel="noopener"><i class="fas fa-up-right-from-square mr-1"></i>Abrir imagem</a>
+</div>
+<button type="button" class="block w-full overflow-hidden rounded-lg bg-gray-50 border border-gray-100" onclick="openLightbox('../Certificados/imagens/Certificado-Reconhecimento-SIS.png','Certificate of Recognition — ISO 9001:2015')">
+<img alt="Certificate of Recognition — ISO 9001:2015" class="cert-img w-full h-auto rounded-lg" loading="lazy" src="../Certificados/imagens/Certificado-Reconhecimento-SIS.png"/>
+</button>
+</figure>
+</div>
+<p class="flex items-center justify-center text-gray-500 text-sm mt-6"><i class="fas fa-expand-alt mr-2"></i>Clique na imagem para ampliar</p>
+</div>
+<div class="tab-panel hidden p-6 md:p-8" id="panel-impl">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-6">
+<div><h3 class="text-xl font-bold text-gray-900 mb-1">Certificado de Implementação</h3><p class="text-gray-600">Emitido pela Continental Consulting para o Sistema de Gestão da Qualidade, em 29 de abril de 2026</p></div>
+<a class="mt-4 md:mt-0 inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl" href="../Certificados/Certificado-Implementacao-SGC-ContinentalConsulting.pdf" rel="noopener" target="_blank"><i class="fas fa-file-pdf mr-3 text-lg"></i>Descarregar PDF</a>
+</div>
+<p class="text-sm text-gray-500 max-w-lg mx-auto text-center">
+      Este certificado, emitido pela consultoria que acompanhou o projeto (Continental Consulting), atesta a
+      implementação do Sistema de Gestão da Qualidade conforme a ISO 9001:2015 e é distinto da certificação emitida
+      pela entidade certificadora acreditada (SIS Certifications), disponível nos separadores acima.
+    </p>
+</div>
+</div>
+
+<!-- Lightbox -->
+<div aria-modal="true" class="fixed inset-0 z-50 bg-black/80 items-center justify-center p-4" id="lightbox" onclick="closeLightbox()" role="dialog">
+<button aria-label="Fechar" class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/15 hover:bg-white/30 text-white text-xl" onclick="closeLightbox()" type="button"><i class="fas fa-xmark"></i></button>
+<img alt="" class="max-h-full max-w-full rounded-lg shadow-2xl bg-white" id="lightbox-img" onclick="event.stopPropagation()" src=""/>
+</div>
+
+<!-- Escopo certificado -->
+<div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 mb-6">
+<h2 class="text-lg font-bold text-gray-800 mb-3"><i class="fas fa-crosshairs mr-2 text-primary-600"></i>Escopo certificado</h2>
+<p class="text-gray-700 mb-4">
+    Prestação de serviços de Segurança Privada, Petróleo e Gás (Manpower), Formação Profissional e Capacitação
+    e Segurança Contra Incêndio.
+  </p>
+<table class="data w-full">
+<tr><th style="width:28%">Organização certificada</th><td>SAKENI - Prestação de Serviços, Lda.</td></tr>
+<tr><th>NIF</th><td>5417505552</td></tr>
+<tr><th>Estabelecimento licenciado</th><td>Rua da Sonda, Bairro Nova Urbanização, Quarteirão 36-B, Talhão 1, n.º 36B-1, Cacuaco, Luanda, Angola</td></tr>
+<tr><th>Morada certificada</th><td>Rua Ndunduma, n.º 122-A, Miramar, Luanda, Angola</td></tr>
+<tr><th>Código IAF</th><td>35 &amp; 37</td></tr>
+</table>
+</div>
+<!-- Entidade certificadora -->
+<div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 mb-6">
+<h2 class="text-lg font-bold text-gray-800 mb-3"><i class="fas fa-building-shield mr-2 text-primary-600"></i>Entidade certificadora</h2>
+<table class="data w-full">
+<tr><th style="width:28%">Organismo</th><td>SIS Certifications Pvt. Ltd. (SIS CERT)</td></tr>
+<tr><th>Acreditação</th><td>IAS — International Accreditation Service · Management Systems Certification Body MSCB-131 · membro do acordo multilateral IAF</td></tr>
+<tr><th>Sede</th><td>Unit No. 514, 5.º andar, Vipul Business Park, Sector-48, Sohna Road, Gurgaon-122018, Haryana, Índia</td></tr>
+<tr><th>Verificação</th><td><a class="text-primary-600 hover:underline" href="https://siscertifications.com" rel="noopener" target="_blank">siscertifications.com</a> — o estado do certificado pode ser verificado através do número SIS1170926Q116</td></tr>
+</table>
+</div>
+<!-- Documentos -->
+<div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 mb-6">
+<h2 class="text-lg font-bold text-gray-800 mb-4"><i class="fas fa-folder-open mr-2 text-primary-600"></i>Documentos disponíveis</h2>
+<div class="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+<a class="flex items-center p-4 rounded-lg border border-gray-200 hover:bg-blue-50 transition-colors" href="../Certificados/Certificado-ISO9001-SIS1170926Q116-PT.pdf" rel="noopener" target="_blank">
+<i class="fas fa-file-pdf text-2xl text-red-600 mr-3"></i>
+<div><p class="font-medium text-gray-800 text-sm">Certificado (Português)</p><p class="text-xs text-gray-500">SIS1170926Q116</p></div>
+</a>
+<a class="flex items-center p-4 rounded-lg border border-gray-200 hover:bg-blue-50 transition-colors" href="../Certificados/Certificado-ISO9001-SIS1170926Q116-EN.pdf" rel="noopener" target="_blank">
+<i class="fas fa-file-pdf text-2xl text-red-600 mr-3"></i>
+<div><p class="font-medium text-gray-800 text-sm">Certificate (Inglês)</p><p class="text-xs text-gray-500">Versão original</p></div>
+</a>
+<a class="flex items-center p-4 rounded-lg border border-gray-200 hover:bg-blue-50 transition-colors" href="../Certificados/Certificado-Reconhecimento-SIS.pdf" rel="noopener" target="_blank">
+<i class="fas fa-award text-2xl text-amber-500 mr-3"></i>
+<div><p class="font-medium text-gray-800 text-sm">Certificate of Recognition</p><p class="text-xs text-gray-500">SIS Certifications</p></div>
+</a>
+<a class="flex items-center p-4 rounded-lg border border-gray-200 hover:bg-blue-50 transition-colors" href="../Certificados/Certificado-Implementacao-SGC-ContinentalConsulting.pdf" rel="noopener" target="_blank">
+<i class="fas fa-file-signature text-2xl text-primary-600 mr-3"></i>
+<div><p class="font-medium text-gray-800 text-sm">Certificado de Implementação</p><p class="text-xs text-gray-500">Continental Consulting</p></div>
+</a>
+</div>
+</div>
+
+<!-- Competência da Direção -->
+<div class="bg-white rounded-2xl shadow-sm p-6 border border-gray-100 mb-6">
+<h2 class="text-lg font-bold text-gray-800 mb-3"><i class="fas fa-user-graduate mr-2 text-primary-600"></i>Competência da Direção</h2>
+<p class="text-gray-700 text-sm mb-4">
+    Como evidência de competência da liderança em auditoria de sistemas de gestão (cláusula 9.2 — Auditoria
+    Interna), o Director Geral concluiu formação de Auditor Líder de Sistemas de Gestão (ISO 19011:2018),
+    incorporando ISO 9001:2015.
+  </p>
+<div class="flex flex-col sm:flex-row gap-4 items-start">
+<a class="flex-shrink-0 w-40" href="../Registros/Internos/RRHH/Formacao-Auditor-Lider-Joaquim-Vicente.png" target="_blank">
+<img alt="Certificado de Formação — Auditor Líder de Sistemas de Gestão" class="w-full rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow" src="../Registros/Internos/RRHH/Formacao-Auditor-Lider-Joaquim-Vicente.png"/>
+</a>
+<a class="doc-link flex items-center gap-3 rounded-lg border border-gray-200 p-3 w-fit hover:bg-blue-50 transition-colors" href="../Registros/Internos/RRHH/Formacao-Auditor-Lider-Joaquim-Vicente.pdf" target="_blank">
+<i class="fas fa-file-pdf text-red-500 text-xl"></i>
+<div>
+<p class="text-sm font-semibold text-gray-800">Certificado de Formação — Joaquim Vicente João</p>
+<p class="text-xs text-gray-500">Auditor Líder de Sistemas de Gestão, 48h — Continental Consulting, Certificado n.º AOA9011402-260930</p>
+</div>
+</a>
+</div>
+<p class="text-xs text-gray-500 mt-2">Registo pessoal de formação — não constitui, por si só, a certificação do Sistema de Gestão da Qualidade da Sakeni (ver "Documentos disponíveis" acima).</p>
+</div>
+
+<!-- Manutenção da certificação -->
+<div class="bg-amber-50 border border-amber-200 rounded-xl p-5">
+<h2 class="text-base font-semibold text-amber-800 mb-2"><i class="fas fa-triangle-exclamation mr-2"></i>Manutenção da certificação</h2>
+<ul class="list-disc list-inside text-sm text-amber-800 space-y-1">
+<li>A validade do certificado depende da conclusão com sucesso da auditoria de supervisão até <strong>30.08.2027</strong>.</li>
+<li>Qualquer alteração significativa ao escopo certificado ou à norma aplicável invalida o certificado — deve ser comunicada previamente à entidade certificadora.</li>
+<li>Manter os registos de auditoria interna e a Revisão pela Direção atualizados (ver <a class="underline" href="auditoria-interna.html">Auditoria Interna</a>), como evidência para a auditoria de supervisão.</li>
+<li>Recertificar antes de 30.08.2029, para manter a validade do certificado além de 29.09.2029.</li>
+<li>O certificado é propriedade da SIS Certifications e deve ser devolvido em caso de suspensão.</li>
+</ul>
+</div>
+</div>
+<script>
+function changeTab(id){
+  document.querySelectorAll('.tab-panel').forEach(function(p){p.classList.add('hidden');});
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('active');});
+  document.getElementById('panel-'+id).classList.remove('hidden');
+  document.getElementById('tab-'+id).classList.add('active');
+}
+function openLightbox(src,alt){
+  var i=document.getElementById('lightbox-img'); i.src=src; i.alt=alt||'';
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLightbox();});
+</script>
+</body>
+</html>
